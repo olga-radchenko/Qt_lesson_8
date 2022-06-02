@@ -1,0 +1,4 @@
+QMainWindow{background-color: white}
+QWidget{background-color: white}
+QPushButton {font: bold 14 px; background-color: lightGrey;}
+QPlainTextEdit {border: 1px solid lightGrey;}
