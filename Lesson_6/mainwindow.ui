@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Текстовый редактор</string>
+  </property>
+  <widget class="QWidget" name="centralwidget"/>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="file_menu">
+    <property name="title">
+     <string>Файл</string>
+    </property>
+    <addaction name="new_act"/>
+    <addaction name="open_act"/>
+    <addaction name="save_act"/>
+    <addaction name="separator"/>
+    <addaction name="print_act"/>
+    <addaction name="separator"/>
+    <addaction name="exit_act"/>
+   </widget>
+   <widget class="QMenu" name="lang_menu">
+    <property name="title">
+     <string>Язык</string>
+    </property>
+    <addaction name="ru_act"/>
+    <addaction name="en_act"/>
+   </widget>
+   <widget class="QMenu" name="theme_menu">
+    <property name="title">
+     <string>Тема</string>
+    </property>
+    <addaction name="light_act"/>
+    <addaction name="dark_act"/>
+   </widget>
+   <widget class="QMenu" name="ref_menu">
+    <property name="title">
+     <string>Справка</string>
+    </property>
+    <addaction name="ref_act"/>
+   </widget>
+   <addaction name="file_menu"/>
+   <addaction name="lang_menu"/>
+   <addaction name="theme_menu"/>
+   <addaction name="ref_menu"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="new_act">
+   <property name="text">
+    <string>Создать</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+N</string>
+   </property>
+  </action>
+  <action name="open_act">
+   <property name="text">
+    <string>Открыть...</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+O</string>
+   </property>
+  </action>
+  <action name="save_act">
+   <property name="text">
+    <string>Сохранить</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
+   </property>
+  </action>
+  <action name="print_act">
+   <property name="text">
+    <string>Печать</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+P</string>
+   </property>
+  </action>
+  <action name="exit_act">
+   <property name="text">
+    <string>Выход</string>
+   </property>
+   <property name="shortcut">
+    <string>Esc</string>
+   </property>
+  </action>
+  <action name="ru_act">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Русский</string>
+   </property>
+  </action>
+  <action name="en_act">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Английский</string>
+   </property>
+  </action>
+  <action name="light_act">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Светлая</string>
+   </property>
+  </action>
+  <action name="dark_act">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Темная</string>
+   </property>
+  </action>
+  <action name="ref_act">
+   <property name="text">
+    <string>О программе</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

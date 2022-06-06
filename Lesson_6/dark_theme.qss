@@ -1,0 +1,5 @@
+QMainWindow{background-color: darkGray}
+QWidget{background-color: darkGray}
+QPushButton {font: bold 14 px; background-color: pink;}
+QPlainTextEdit {border: 1px solid black;}
+QTreeView::item:selected{background-color: pink;}
